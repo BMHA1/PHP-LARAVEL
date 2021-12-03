@@ -1,13 +1,12 @@
 # PHP-LARAVEL 🚀
 Primero pasos con PHP y su framework laravel! 
 
-```
-     
+***
 ### Laravel ### 
+
 Laravel: Es un framework de código abierto para desarrollar aplicaciones y servicios web PHP 5 y PHP 7. 
 fue creado en 2011 y tiene una gran influencia DE FRAMEWORKS como Ruby on Rails, Sinatra y ASP.NET
-
-```
+***
 ### Sus caracteristicas: 
 
 - Sistema de ruteo, también RESTful3
@@ -20,43 +19,43 @@ fue creado en 2011 y tiene una gran influencia DE FRAMEWORKS como Ruby on Rails,
 - Usa componentes de Symfony11
 - Adopta las especificaciones PSR-212 y PSR-4
 
-```
-### intalación Compose 🔧 
+***
+## intalación Compose 🔧 
 ir a la pagina https://getcomposer.org/download/ y descargar
 
-```
-### Crear Proyecto  
+***
+## Crear Proyecto  
 Existen dos formas de generar una estructura de proyecto nuevas: 
  - laravel new (NOMBRE DEL PROYECTO)
  o
  - composer create-project --prefer-dist laravel/laravel (NOMBRE DEL PROYECTO, (VERSIÓN))
 
-```
-### Servidor interno 
+***
+## Servidor interno 
 Mediente el CLI artisan podremos realizar múltiples acciones entre ellas, lanzar el servidor de puebras con el comando
 
 - php artisan serve
 
-```
-### Enrutado Básico 
+***
+## Enrutado Básico 
  La ruta definida en el esqueleto del proyecto instalado, define 3 conceptos: 
  - El método que recibe 
  - La ruta
  - Y la accion a realizar
 
-Route::get('/', function () {
+`Route::get('/', function () {
 return view('welcome');
-});
+});`
 
 ```
-### Actividades de clase
+## Actividades de clase
 
 - Error vista : generamos una plantilla personalizada para gestionar la vista de los error
  - Creación de nuevas vista.Blade
  - Creación de controller mediante el CLI artisan : php artisan help make:controller
  
 ```
- ### Reto 1 🔩
+ ## Reto 1 🔩
  
  A partir de un nuevo proyecto o el proyecto que
 se trabaja en clase:
