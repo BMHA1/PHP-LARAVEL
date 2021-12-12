@@ -66,5 +66,17 @@ denomine HomeController
 4. Crear la ruta para que el por defecto de la
 web se muestre
 
+## Conexión con base datos - MySQL - CLI Artisan
+ 
+ * Creamos desde Workbench un sckema
+ * Configuramos las variables de entorno  desde el archivo .env  colocando el nombre de la BBDD y la contraseña
+ * Migramos por defecto unas tablas que PHP nos brinda. en este caso son 4
+## llamar a la base de datos desde el controlador 
+
+## crear un nueva migración con CLI Artisan
+
+
+##
+
 ## Autores ✒️
 * **Brajin Hanna Miguel Azrak** - *Conociendo PHP* - [BMHA1](https://github.com/BMHA1/)
