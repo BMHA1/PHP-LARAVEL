@@ -76,7 +76,47 @@ web se muestre
 ## crear un nueva migración con CLI Artisan
 
 
-##
+## Artisan thinker::
+Request => al body
+
+## rutas con parametros
+
+##  Creando migración
+Creamos una migración con : 
+``` php artisan make:migration create_plates```                                                
+ * Definimos un modelo:  
+```php artisan make:model Blog``` 
+
+    * Estructura del modelo creado:
+    
+    ```use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Plate extends Model
+{
+    use HasFactory;
+    protected $fillable = [
+        'name',
+        'comensales',
+        'content_gluten',
+    ];
+    protected $casts = [
+        'content_gluten' => 'boolean',
+    ];
+}```
+
+
+    
+* Creamos un controlador, cabe descatar que el **-r** nos genera un controlador con todos los métodos:  
+```php artisan make:controller "Nombredelcontrolador" -r```
+* y desde api, enlazamos al controlador. **EN LA RUTA URL DEBEMOS COLOCAR /API/**  
+``` Route::apiResource('/plate', App\Http\Controllers\PlateController::class);``` 
+   * Cabe destacar que sí utilizamos el metedo estatico apiResource, nos genera todas las rutas para un CRUD básico. 
+ ```php artisan make:controller PacoController -r```
+
+* usar y crear Factory  
+```
+
 
 ## Autores ✒️
 * **Brajin Hanna Miguel Azrak** - *Conociendo PHP* - [BMHA1](https://github.com/BMHA1/)
