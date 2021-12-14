@@ -47,10 +47,9 @@ Mediente el CLI artisan podremos realizar múltiples acciones entre ellas, lanza
 return view('welcome');
 });`
 
-```
 ## Actividades de clase
-
-- Error vista : generamos una plantilla personalizada para gestionar la vista de los error
+```
+ - Error vista : generamos una plantilla personalizada para gestionar la vista de los error
  - Creación de nuevas vista.Blade
  - Creación de controller mediante el CLI artisan : php artisan help make:controller
  
